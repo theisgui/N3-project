@@ -734,13 +734,13 @@ input[type="text"] {
 
 .image-container {
     position: relative;
-    width: 1200px;
     max-width: 100%;
     text-align: center;
 }
 
 .image1 {
     height: 100%;
+    width: 100%;
     display: block;
 }
 
