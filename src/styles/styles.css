@@ -31,6 +31,10 @@ nav a {
     
 }
 
+.iconlogo2 {
+    width: 10vw;
+}
+
 .header .search-bar {
     display: flex;
     align-items: center;
