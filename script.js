@@ -1,5 +1,5 @@
-const renderizarFinalizacao = () => {
-  document.title = "Finalizar";
+const renderFinalizarCompra = () => {
+  document.title = "Finalizar Compra";
   main.innerHTML = `
               <div class="main">
           <div class="checkout-form">
@@ -130,7 +130,7 @@ const main = document.getElementById("main");
 document.addEventListener("click", (ev) => {
   if (ev.target.id == "comprarIphone") {
     console.log("botao");
-    renderizarFinalizacao();
+    renderFinalizarCompra();
   }
 });
 
