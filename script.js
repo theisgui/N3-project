@@ -123,13 +123,13 @@ const renderFinalizarCompra = () => {
       </div>
      
      `;
+     window.scrollTo(0, 0);
 };
 
 const main = document.getElementById("main");
 
 document.addEventListener("click", (ev) => {
   if (ev.target.id == "comprarIphone") {
-    console.log("botao");
     renderFinalizarCompra();
   }
 });
