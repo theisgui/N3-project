@@ -9,6 +9,11 @@ nav a {
     text-decoration: none;
 }
 
+.spacemargin {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
 /* INÍCIO HEADER */
 .cabecalho1 {
     display: flex;
@@ -17,23 +22,22 @@ nav a {
 }
 
 .logo {
-    padding: 2rem 0;
-    margin: 1rem 0;
-    background-image: url("/imgs/logo-icon.png");
-    width: 20vw;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iconlogo {
+    width: 50vw;
+    
 }
 
 .header .search-bar {
     display: flex;
     align-items: center;
-    width: 50%;
 }
 
 .header .search-bar input {
-    width: 100%;
+    width: 540px;
     height: 30px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
@@ -58,10 +62,6 @@ nav a {
 .header .icons {
     display: flex;
     align-items: center;
-}
-
-.icons{
-    padding: 0 2rem;
 }
 
 .header .icons img {
