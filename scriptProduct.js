@@ -1,60 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/styles/styles.css">
-    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <header class="header">
-
-        <div class="spacemargin">
-            <div class="cabecalho1">
-                <div class="logo">
-                    <img src="./imgs/logo-icon.png" class="iconlogo" alt="Logo Icon">
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Procure por produtos">
-                    <img src="./imgs/magnifying-glass-icon.png" alt="Search Icon">
-                </div>
-                <div class="icons">
-                    <a href="" class="">
-                        <img src="./imgs/categories-icon.png" class="icon1" alt="Categories Icon">
-                    </a>
-                    <a href="" class="">
-                        <img src="./imgs/account-icon.png" id="icon2" alt="Account Icon">
-                    </a>
-                    <a href="" class="">
-                        <img src="./imgs/cart-icon.png" id="icon3" alt="Cart Icon">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="bloco1">
-            <div class="spacemargin">
-                <nav class="nav">
-                    <img src="./imgs/lista-icon.png" alt="Lista Icon">
-                    <a class="opção1" href="#">Todas Categorias</a>
-                    <a class="opção2" href="#">Consoles</a>
-                    <a class="opção3" href="#">Smartphones</a>
-                    <a class="opção4" href="#">Fones</a>
-                    <a class="opção5" href="#">Notebooks</a>
-                    <div class="supnum">
-                        <img src="./imgs/support-icon.png" class="iconlista" alt="Support Icon">
-                        <span class="numero">(47) 12345-6789</span>
-                    </div>
-            </div>
-        </div>
-        </nav>
-    </header>
-    <!-- Navegação -->
-    <main id="main">
+const renderProduct = () => {
+    document.title = "Produto";
+    main.innerHTML = `<main id="main">
         <div>
             <div style="min-height: 80vh; background-color: rgb(255, 255, 255);">
                 <div style="margin: 0 15%;margin-top: 5rem; background-color: rgb(255, 255, 255);color: rgb(0, 0, 0); display: flex;">
@@ -228,95 +174,14 @@
 
             </div>
         </div>
-    </main>
-    <div class="bloco2">
-        <div class="spacemargin">
-            <div class="newsletter">
-                <div class="newsletter1">
-                    <img src="./imgs/carta-icon.png">
-                    <p class="assine">Assine a Newsletter :)</p>
-                </div>
+    </main>`;
+    window.scrollTo(0, 0);
+};
 
-                <div class="newsletter2">
-                    <p class="motivo">Receba nossos e-mails com promoções,</br>sorteios, descontos e muito mais.</p>
-                </div>
+const main = document.getElementById("main");
 
-                <div class="newsletter3">
-                    <input type="email" placeholder="Seu e-mail">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-    </div>
-    <div class="spacemargin">
-        <div class="groupcolumn">
-            <div class="column1">
-                <div class="direitosline">
-                    <img src="./imgs/logo-icon.png" class="iconlogo2" alt="">
-                    <p class="direitos">Todos os direitos reservados © 2024 bits</p>
-                </div>
-                <div class="contacts">
-                    <div class="envemail">
-                        <img src="./imgs/envelope-icon.png" class="envicon">
-                        <p class="textemail">bits@shop.com</p>
-                    </div>
-                    <div class="phone">
-                        <img src="./imgs/tel-icon.png" class="phoneicon">
-                        <p class="telefone">(47) 12345-6789</p>
-                    </div>
-                    <div class="rualocal">
-                        <img src="./imgs/local-icon.png" class="localicon">
-                        <p class="rua">R. Visc. de Taunay, 427 - Centro, Joinville, SC, Brasil</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column2">
-                <div class="titleinfo">
-                    <p class="info">Informações</p>
-                </div>
-                <div class="sobretermos">
-                    <a href="" class="sobre">Sobre Nós</a>
-                    <a href="" class="termo">Termos e Condições</a>
-                    <a href="" class="metodo">Método de entrega</a>
-                    <a href="" class="pagamento">Pagamentos</a>
-                </div>
-            </div>
-            <div class="column3">
-                <div class="titleatend">
-                    <p class="titleatendstyle">Atendimento</p>
-                </div>
-                <div class="textatend">
-                    <p class="textatendimento">Horário de atendimento:</br>08:00 às 20:00 -</br>Segunda a
-                        Sábado,</br>horário de Brasília</br>(Exceto domingo e feriados)</p>
-                </div>
-            </div>
-            <div class="column4">
-                <div class="titlemidias">
-                    <p class="titleredes">Mídias Sociais</p>
-                </div>
-                <div class="logomidias">
-                    <a href="" class="">
-                        <img src="./imgs/twitter-icon.png" class="twittericon" alt="">
-                    </a>
-                    <a href="" class="">
-                        <img src="./imgs/instagram-icon.png" class="instagramicon" alt="">
-                    </a>
-                    <a href="" class="">
-                        <img src="./imgs/youtube-icon.png" class="youtubeicon" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="lastline">
-            <div class="cnpj">
-                <p class="cnpjstyle">CNPJ: 04.803.331/0001-10</p>
-            </div>
-            <div class="logoiconpags">
-                <img src="./imgs/logopag-icons1.png" class="iconpags" alt="">
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+document.addEventListener("click", (ev) => {
+ if (ev.target.id == "verMais") {
+   renderProduct();
+ }
+});
